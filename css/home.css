@@ -61,8 +61,13 @@
 /*nav bar end*/
 
 /*main header start*/
+.main-header-bg{
+    width: 100vw;
+    height: 703px;
+    background: #DCEAF5;
+}
 .main-header{
-    width: 100%;
+    width: 1280px;
     height: 703px;
     margin: auto;
     background: #DCEAF5;
@@ -70,15 +75,21 @@
     display: flex;
     justify-content: center;
 }
-
 .header{
-    max-width: 576px;
+    width: 576px;
     height: 439px;
     margin: auto;
+    margin-left: 0;
     display: flex;
     flex-direction: column;
 }
 
+.header-img{
+    margin: 0;
+    margin-right: -150px;
+    padding: 0;
+    display: flex;
+}
 .header-text{
     margin: 0;
     padding: 0;
@@ -147,13 +158,6 @@
     justify-content: space-between;
 }
 
-.header-img{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: baseline;
-    align-content:initial ;
-}
 
 
 /*main header end*/
@@ -263,6 +267,7 @@
     align-content: space-between;
 }
 .features{
+    margin: 0 20px;
     width: 401px;
     height: 277px;
     border-radius: 20px;
@@ -271,7 +276,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
 }
 .features img{
     width: 33px;
@@ -324,9 +328,6 @@
     mix-blend-mode: multiply;
 }
 
-.about-articles-top{
-
-}
 .about-articles-top h1{
     font-size: 48px;
     font-weight: 600;
@@ -368,18 +369,160 @@
     color: #5B5B5B;
 }
 
-.about-articles-bottom-left{
-
-}
-.about-articles-bottom-right{
-
-}
-
 /* about section ends here */
 
 
 /* service section starts here */
 
+.service-sec-bg {
+    width: 1280px;
+    height: auto;
+    margin: auto;
+    margin-top: 85px;
+    display: flex;
+    justify-content: center;
+    background-color: #edf7ff;
+    border-radius: 20px;
+}
 
+.service-left{
+    margin: auto;
+    margin-top: 48px;
+    margin-left: 48px;
 
+}
+.service-tab button{
+    margin: 0;
+    margin-right: 24px;
+    padding: 8px 24px;
+    border-radius: 31px;
+    text-transform: capitalize;
+}
+.service-btn1 {
+    background-color: white;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #F58A07;
+    border: none;
+}
+.service-btn2 {
+    background: none;
+    border: solid 1px #A8BCCC;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(6, 50, 85, 0.3);
+}
+.service-btn3{
+    background: none;
+    border: solid 1px #A8BCCC;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: rgba(6, 50, 85, 0.3);
+}
+
+.service-articles{
+    max-width: 576px;
+    margin: 0;
+    margin-top: 80px;
+}
+.service-articles h1{
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    color: #0D1317;
+}
+.service-articles p{
+    margin-top: 25px;
+    margin-bottom: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    color: #5B5B5B;
+}
+.service-articles a{
+    margin-top: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 17px;
+    color: #F58A07;
+    text-decoration: none;
+}
+.service-articles a::after{
+    content: '\2192';
+    font-size: 20px;
+    margin: 8px;
+}
+
+.service-right{
+    margin: auto;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.service-ribbon{
+    display: flex;
+    justify-content: flex-end;
+    margin: -16px -63px 0 0;
+    padding: 0;
+}
+.service-img{
+    margin-bottom: 48px;
+    background-color: #F58A07;
+    width: 25%;
+    height: 466px;
+    border-radius: 20px 0 0 20px;
+}
+.service-img img{
+    border-radius: 20px;
+    mix-blend-mode: multiply;
+}
 /* service section ends here */
+
+/* cta section starts here */
+.cta-sec{
+    margin-top: 128px;
+    width: 100vw;
+    height: 517px;
+    background-color: grey;
+    display: flex;
+}
+.cta-sec-left{
+    width: 50vw;
+    height: 100%;
+    background: url('../images/experience-image2.png') center/cover no-repeat;
+}
+/* .cta-sec-left img{
+    width: 100%;
+    height: 100%;
+    
+} */
+.cta-sec-right{
+    padding: 128px;
+    width: 50vw;
+    height: 100%;
+    background-color: #F58A07;
+    
+}
+.cta-sec-right p{
+    width: 532px;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 56px;
+    color: white;
+}
+.cta-sec-right button{
+    margin-top: 40px;
+    padding: 19px 32px;
+    border: none;
+    background-color: white;
+    border-radius: 31px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #F58A07;
+}
+/* cta section end here */
