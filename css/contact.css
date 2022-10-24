@@ -159,10 +159,11 @@
     line-height: 17px;
     color: white;
 }
-#map img{
+#map iframe{
     margin-left: 55px;
     width: 605px;
     height: 370px;
+    border: none;
     border-radius: 31px;
 }
 /* contact end */
